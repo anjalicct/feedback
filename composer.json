@@ -1,17 +1,19 @@
 {
     "name": "anjalicct/feedback",
     "description": "This will sent feedback form to admin/Package demo.",
+    "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Anjali",
             "email": "anjali.p@communication.com"
         }
     ],
-    "require": {},
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Anjalicct\\Feedback\\": "packages/anjalicct/feedback/src/"
         }
     },
-    "minimum-stability": "dev"
+    "require": {}
 }
