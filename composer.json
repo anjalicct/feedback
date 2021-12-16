@@ -7,11 +7,11 @@
             "email": "anjali.p@communication.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
             "Anjalicct\\Feedback\\": "packages/anjalicct/feedback/src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
