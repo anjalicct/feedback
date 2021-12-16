@@ -1,0 +1,16 @@
+{
+    "name": "contact/feedback",
+    "description": "This will sent feedback form to admin/Package demo.",
+    "authors": [
+        {
+            "name": "Anjali",
+            "email": "anjali.p@communication.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Contact\\Feedback\\": "packages/contact/feedback/src/"
+        }
+    }
+}
