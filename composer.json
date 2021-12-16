@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Contact\\Feedback\\": "packages/contact/feedback/src/"
+            "Anjalicct\\Feedback\\": "packages/anjalicct/feedback/src/"
         }
     }
 }

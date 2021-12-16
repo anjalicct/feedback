@@ -1,6 +1,6 @@
 <?php
 
-namespace Contact\Feedback;
+namespace Anjalicct\Feedback;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class FeedbackServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->app->make('Contact\Feedback\FeedbackController');
+        $this->app->make('Anjalicct\Feedback\FeedbackController');
     }
 
     /**

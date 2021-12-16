@@ -1,6 +1,6 @@
 <?php
 
-namespace Contact\Feedback;
+namespace Anjalicct\Feedback;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
