@@ -13,7 +13,6 @@ class FeedbackServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Anjalicct\Feedback\FeedbackController');
     }
 
     /**
@@ -25,11 +24,11 @@ class FeedbackServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/routes/feedback.php');
         // $this->publishes([__DIR__.'/routes/feedback.php' => 'routes/'], 'route');
-        $this->publishes([__DIR__.'/routes/feedback.php' => 'routes/feedback.php',
-        ], 'route');
+        $this->publishes([__DIR__.'/./../routes/feedback.php' => resource_path('routes/feedback.php'),
+        ], 'routes');
 
         $this->loadViewsFrom(__DIR__.'/views', 'feedback');
-        $this->publishes([__DIR__.'/views/feedbackform.blade.php' => 'resources/views/feedback/feedbackform.blade.php'],'views');
+        $this->publishes([__DIR__.'/./../views/feedbackform.blade.php' => 'resources/views/feedback/feedbackform.blade.php'],'views');
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->publishes([__DIR__.'/database/migrations' => 'database/migrations/'], 'migration');
