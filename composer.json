@@ -12,7 +12,15 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
+            "App\\": "app/",
             "Anjalicct\\Feedback\\": "packages/anjalicct/feedback/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "anjalicct\\feedback\\FeedbackServiceProvider"
+            ]
         }
     },
     "require": {}
