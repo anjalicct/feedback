@@ -14,7 +14,6 @@ class FeedbackController extends Controller
     }
 
     public function submit(Request $request){
-        // dd($request->all());
         $request->validate([
             'email' => 'required',
             'name' => 'required',

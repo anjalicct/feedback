@@ -24,13 +24,13 @@ class FeedbackServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        $this->publishes([__DIR__.'/routes/feedback.php' => resource_path('routes/')], 'route');
+        $this->publishes([__DIR__.'/routes/feedback.php' => 'routes/'], 'route');
 
         $this->loadViewsFrom(__DIR__.'/views', 'feedback');
-        $this->publishes([__DIR__.'/views' => resource_path('resources/views/feedback/')],'views');
+        $this->publishes([__DIR__.'/views' => 'resources/views/'],'views');
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
-        $this->publishes([__DIR__.'/database/migrations' => resource_path('database/migrations/')], 'migration');
+        $this->publishes([__DIR__.'/database/migrations' => 'database/migrations/'], 'migration');
 
         $this->publishes([__DIR__.'/FeedbackController' => 'app/http/controllers/'], 'controller');
     }
