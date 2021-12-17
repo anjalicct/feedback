@@ -19,5 +19,12 @@
     "require-dev": {
         "orchestra/testbench": "^3.8"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anjalicct\\Feedback\\FeedbackServiceProvider"
+            ]
+        }
+    },
     "require": {}
 }
