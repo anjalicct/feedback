@@ -16,6 +16,9 @@
             "Anjalicct\\Feedback\\": "packages/anjalicct/feedback/src/"
         }
     },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    },
     "extra": {
         "laravel": {
             "providers": ["Anjalicct\\Feedback\\FeedbackServiceProvider"]
