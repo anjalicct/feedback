@@ -18,9 +18,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "anjalicct\\feedback\\FeedbackServiceProvider"
-            ]
+            "providers": ["Anjalicct\\Feedback\\FeedbackServiceProvider"]
         }
     },
     "require": {}
